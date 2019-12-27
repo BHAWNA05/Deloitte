@@ -1,0 +1,55 @@
+Create a table called Employee with the following Columns  and perform the following operations:-
+------------------------------------------------------------------------------------------------------------
+
+EmployeeID
+EmployeeName
+EmployeeAddress
+DOB
+DOJ
+Salary
+
+
+
+a.) Insert five records
+    insert into employee values(1,'Tufail','Bengaluru','10-5-1990','6-2-2015',12000);
+    insert into employee values(2,'Ahmed','Delhi','1-7-1996','6-10-2016',24000);
+    insert into employee values(3,'Roshan','Mumbai','9-5-1980','7-6-2010',15000);
+    insert into employee values(4,'Tommy','UK','8-9-1995','6-10-2013',240000);
+    insert into employee values(5,'Tom','US','10-6-1994','6-2-2009',120000);
+
+
+
+b) Retrieve all the records
+   Select * from employee;
+
+
+c) Retrieve the Employee name whose salary is greater than 20000
+   select EmployeeName from employee where salary>20000;
+
+d) Retrieve the Employee name whose address contains 'a' or 'p' or 'r'  as the last character
+
+    select * from employee where EmployeeAddress  like ('%a') or EmployeeAddress like      ('%P') or EmployeeAddress like('%i');
+
+
+ 
+e) Increase the Salary of all the Employee by 20%
+    update employee 
+           set salary = salary +(salary *20)/100
+    
+     
+
+
+
+f) Delete all the employee records whose salary is less than 5000
+
+   delete from employee where salary <5000;
+
+g) Add another column Email and update the contents.
+    alter table employee add email varchar(40);
+    
+
+update employee set email='GMAIL' where EmployeeID = 1
+update employee set email='YAHOO' where EmployeeID = 2
+update employee set email='REDIF' where EmployeeID = 3
+update employee set email='GMAIL' where EmployeeID = 4
+update employee set email='OUTLK' where EmployeeID = 5
