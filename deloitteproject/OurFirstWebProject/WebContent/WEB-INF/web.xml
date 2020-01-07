@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>OurFirstWebProject</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Welcome</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>com.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Welcome1</display-name>
+    <servlet-name>Welcome1</servlet-name>
+    <servlet-class>com.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome1</servlet-name>
+    <url-pattern>/Welcome1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Customer1</display-name>
+    <servlet-name>Customer1</servlet-name>
+    <servlet-class>com.customer.Customer1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Customer1</servlet-name>
+    <url-pattern>/Customer1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet</display-name>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/DemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet1</display-name>
+    <servlet-name>DemoServlet1</servlet-name>
+    <servlet-class>com.DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet1</servlet-name>
+    <url-pattern>/DemoServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ConnectServlet</display-name>
+    <servlet-name>ConnectServlet</servlet-name>
+    <servlet-class>com.ConnectServlet</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>username</param-name>
+      <param-value>bhawna</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>companyname</param-name>
+      <param-value>deloitte</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConnectServlet</servlet-name>
+    <url-pattern>/ConnectServlet</url-pattern>
+    <url-pattern>/cs</url-pattern>
+    <url-pattern>*.cs</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+<context-param>
+<param-name>Itemname</param-name>
+<param-value>Lakme</param-value>
+</context-param>
+
+
+
+</web-app>
